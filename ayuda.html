@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+    <link rel="stylesheet" href="../estilos/ayuda.css">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">MUNDO<span>TECNO</span></div>
+        <ul>
+            <li><a href="index.html ">Inicio</a></li>
+            <li><a href="pilares.html">maquinaria</a></li>
+            <li><a href="pilares2.html">programacion</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="ayuda.html">Ayuda y Soporte</a></li>
+        </ul>
+    </nav>
+    <!-- AYUDA, SOPORTE Y SOLUCIÓN DE PROBLEMAS -->
+    <section id="ayuda">
+        <div class="section-title">
+            <h2>Centro de <span>Ayuda y Soporte</span></h2>
+            <p>Contactos, atención de emergencias y diagnóstico de fallos.</p>
+        </div>
+
+        <div class="help-grid">
+            <!-- Columna 1: Solución de problemas con desplegables -->
+            <div class="help-column">
+                <h3>🛠️ Solución de Problemas</h3>
+                <section class="ayuda">
+                    <h2>Centro de Ayuda</h2>
+
+                    <h3>Preguntas Frecuentes</h3>
+                    <div class="faq">
+                        <p><strong>1. ¿Cómo puedo restablecer mi contraseña?</strong></p>
+                        <p>Ve a la configuración de tu cuenta y selecciona "Cambiar contraseña".</p>
+                    </div>
+                    <div class="faq">
+                        <p><strong>2. ¿Dónde puedo ver mis avances?</strong></p>
+                        <p>En el menú principal, haz clic en la sección "Avance" para ver tu progreso.</p>
+                    </div>
+
+                    <h3>¿Necesitas más soporte?</h3>
+                    <form action="enviar_mensaje.php" method="POST">
+
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required></form>
+
+                        <form><label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required></form>
+                   
+                        <form><label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea></form> 
+
+                        <button type="submit">Enviar Mensaje</button>
+                    
+                </section>
+
+
+                <details class="faq-item">
+                    <summary>El servidor no responde o hay latencia alta</summary>
+                    <div class="faq-answer">
+                        <p><strong>Para solucionarlo puedes:</strong></p>
+                        <ul>
+                            <li>Verificar el estado de las interfaces de red con el comando <code>ping</code>.</li>
+                            <li>Reiniciar el daemon del servicio de enrutamiento.</li>
+                            <li>Comprobar si existe un ataque DDoS en curso desde el panel de monitoreo.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Fallo en la autenticación / Contraseña bloqueada</summary>
+                    <div class="faq-answer">
+                        <p><strong>Para solucionarlo puedes:</strong></p>
+                        <ul>
+                            <li>Solicitar un token de recuperación a tu administrador del sistema.</li>
+                            <li>Esperar 15 minutos para que el bloqueo por intentos expire.</li>
+                            <li>Ingresar mediante la consola serial SSH con credenciales root.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Certificado de seguridad SSL expirado</summary>
+                    <div class="faq-answer">
+                        <p><strong>Para solucionarlo puedes:</strong></p>
+                        <ul>
+                            <li>Ejecutar el script automático <code>certbot renew</code> en el servidor web.</li>
+                            <li>Verificar que las claves públicas estén apuntando al dominio correcto.</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Columna 2: Contacto y Emergencias -->
+            <div class="help-column">
+                <h3>📞 Contacto y Emergencias</h3>
+
+                <div class="contact-card">
+                    <h4>Soporte Técnico General</h4>
+                    <p>📧 Correo: mundotecno@gmai.com</p>
+                    <p>🌐 Chat en vivo: Disponible 24/7 en el panel central.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>©️ 2026 <strong>MUNDOTECNO</strong>Avances tecnologicos en la maqunaria y programacion</p>
+    </footer>
+</body>
+</html>
